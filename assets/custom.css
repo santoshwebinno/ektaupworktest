@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'GT Sectra Display Super';
+    src: url('//cdn.shopify.com/s/files/1/0556/5307/2941/t/2/assets/GT-Sectra-Display-Super-Italic.woff2') format('woff2'),
+        url('//cdn.shopify.com/s/files/1/0556/5307/2941/t/2/assets/GT-Sectra-Display-Super-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Cinetype';
+    src: url('//cdn.shopify.com/s/files/1/0556/5307/2941/t/2/assets/GT-Cinetype-Regular.woff2') format('woff2'),
+        url('//cdn.shopify.com/s/files/1/0556/5307/2941/t/2/assets/GT-Cinetype-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, :focus, :focus-visible {outline:0;box-shadow:none; }
+* {-webkit-tap-highlight-color: transparent;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;}
+
+/*---------------- container ----------------*/
+.page-width {max-width: 100%;padding-left: 35px;padding-right: 35px;}
+html.js {padding-bottom: 0 !important;}
+
+/*---------------- Richtext Section ----------------*/
+.rich-text p {font-size: 70px;font-family: 'GT Cinetype';line-height: 90px;text-align: left;}
+
+/*---------------- Banner Section ----------------*/
+.image-with-logo .hero__overlay::before {background-color: transparent;}
+.image-with-logo .hero.box {border-bottom: 2px solid #000009;}
+
+/*---------------- About Section ----------------*/
+.custom__item .custom__item-inner h4.h3 {font-size: 30px;font-family: 'GT Cinetype';font-weight: normal;}
+.custom__item-inner .rte p {font-size: 30px;font-family: 'GT Cinetype';font-weight: 400;line-height: 35px;padding-right: 80px;}
+.custom-content-blocks .page-width {border-top: 2px solid #000009;}
+.custom-content .custom__item--text:nth-child(2) {border-left: 2px solid #000009;}
+.custom-content-blocks .custom-content .custom__item {padding-top: 100px;padding-bottom: 100px;}
+
+/*-------------- Scrolling Text ------------*/
+.marquee {overflow: hidden;position: relative;}
+.menuss {-webkit-touch-callout: none;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;padding: 0;--marquee-width: 100vw;--offset: 20vw;--move-initial: calc(-25% + var(--offset));--move-final: calc(-50% + var(--offset));--item-font-size: 10vw;counter-reset: menu;}
+.marquee__inner {padding: 150px 0;width: fit-content;display: flex;position: relative;transform: translate3d(var(--move-initial), 0, 0);animation: marquee 5s linear infinite;animation-play-state: play;opacity: 1;transition: opacity 0.1s;}
+.marquee span {font-family: 'GT Cinetype';line-height: 130px;font-size: 130px;padding: 0 10px;margin: 0 20px;white-space: nowrap;font-weight: 400;color: #fff;}
+.marquee span img.svg-icon {margin-right: 6px;height: 26px;display: inline-block;vertical-align: baseline;}
+.service-list--container #slick-slide06 .safe-title h3.safe-title-text {font-size: 28px;margin-top:50px;}
+@keyframes marquee {0% {transform: translate3d(var(--move-initial), 0, 0);}100% {transform: translate3d(var(--move-final), 0, 0);}}
+
+/*-------------- Featured Collection Section ------------*/
+.pro-height--x-small .product-card {height: 94px; }
+.pro-height--small .product-card {height: 225px; }
+.pro-height--medium .product-card {height: 357px; }
+.pro-height--large .product-card {height: 488px; }
+.pro-height--x-large .product-card {height: 582px; }
+.product-card__image-wrapper {max-width: 100% !important;}
+.product-card__image-wrapper img {max-width: 100% !important;max-height: 100% !important;}
+.productss {overflow: hidden;margin-left: -1px;}
+.productss li {padding: 0;/*border-right: 2px solid #000;*/}
+.productss li .grid-view-item__link {border-left: 2px solid #000 !important;}
+div#shopify-section-collection .page-width {padding: 0;}
+div#shopify-section-collection {padding-top: 0;padding-bottom: 35px;}
+.custom-content-blocks {padding-bottom: 0;}
+div#shopify-section-collection .section-header {margin: 0;}
+div#shopify-section-collection h2 {margin: 0;background: #000;color: #fff;padding: 20px;font-size: 30px;font-weight: normal;text-transform: none;letter-spacing: 0;font-family: 'GT Cinetype';}
+.product_card_detail, .product_card_detail + button.btn.product-form__cart-submit {display:none;}
+.productss li:hover .product_card_detail {position: absolute;top: 0;right: 0;left: 0;bottom: 0;height: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;background: #fff;}
+.productss li:hover .product-form__cart-submit {display:block;}
+.productss .product-card {margin: 0;}
+.productss li .product_card_detail .product-card__title {font-size: 50px;font-family: 'GT Cinetype';line-height: 50px;font-weight: normal;}
+.productss li .product_card_detail .special-tags {font-size: 35px;font-family: 'GT Cinetype';line-height: 40px;font-weight: normal;margin: 18px 0;}
+.productss li .product-card:focus-within .product-card__title, .productss li .product-card:hover .product-card__title {border-bottom-color: transparent;}
+.productss li .product_card_detail .price {font-size: 35px;font-family: 'GT Cinetype';line-height: 40px;}
+.productss li .product_card_detail .price-item {font-weight: normal;text-shadow: 0 0 black;}
+.productss li .price dd {margin: 0 auto;}
+.productss li .price__regular, .productss li .price__sale {margin-right: 0;}
+.productss li .product-form__cart-submit {position: absolute;display: flex;bottom: 0;justify-content: center;margin: 0;border-radius: 0;font-size: 35px;font-family: 'GT Cinetype';text-transform: none;font-weight: normal;letter-spacing: 0;color: #000;background: #fff;opacity: 1;border-top: 2px solid #000;padding: 20.5px 0;}
+.productss .product-card__image-wrapper {margin: 0;}
+
+/*-------------- Media Query ------------*/
+
+@media only screen and (min-width: 750px) {
+.pro-height--x-small .product-card {height: 125px; }
+.pro-height--small .product-card {height: 300px; }
+.pro-height--medium .product-card {height: 475px; }
+.pro-height--large .product-card {height: 650px; }
+.pro-height--x-large .product-card {height: 745px; } 
+}
+@media screen and (max-width: 1024px) {
+.custom__item-inner .rte p {font-size: 25px;line-height: 35px;padding-right: 10px;}
+.custom-content-blocks .custom-content .custom__item {padding-top: 60px;padding-bottom: 60px;}
+.productss li .product_card_detail .product-card__title {font-size: 35px;line-height: 35px;}
+.productss li .product_card_detail .special-tags {font-size: 25px;line-height: 30px;}
+.productss li .product_card_detail .price {font-size: 25px;line-height: 30px;}
+.productss li .product-form__cart-submit {font-size: 25px;}
+}
+@media screen and (max-width: 767px) {
+.image-with-logo .hero__inner img {width: 300px;}
+.rich-text p {font-size: 50px;line-height: 65px;}
+.image-with-logo {padding-bottom: 0;}
+.custom-content-blocks {padding-top: 0;}
+.custom__item .custom__item-inner h4.h3 {font-size: 25px;}
+.custom__item-inner .rte p {font-size: 18px;line-height: 25px;padding-right: 0;}
+.marquee span {line-height: 100px;font-size: 100px;}
+.marquee__inner {padding: 100px 0;}
+.marquee__inner {padding: 60px 0;}
+div#shopify-section-collection h2.grid__item.medium-up--one-third:last-child {display: none;}
+div#shopify-section-collection h2.grid__item.medium-up--one-third {width: 50%;}
+}
+@media screen and (max-width: 749px) {
+.custom-content-blocks .custom__item.custom__item--text.medium-up--one-third {width: 30%;max-width: 100%;flex: 0 0 auto;}
+.custom-content-blocks .custom-content .custom__item--text:nth-child(2) {max-width: 100%;}
+.custom-content-blocks .custom-content .custom__item {padding-top: 40px;padding-bottom: 40px;}
+}
+@media screen and (max-width: 575px) {
+.hero--x-large {height: 480px;}
+.rich-text p {font-size: 40px;line-height: 55px;}
+.custom-content-blocks .custom-content {flex-direction: column;margin-left: 0;margin-bottom: 0;}
+.custom-content-blocks .custom-content .custom__item--text:nth-child(2) {border: 0;margin: 0;width: 100%;padding: 0;}
+.custom-content-blocks .custom__item.custom__item--text.medium-up--one-third {width: 100%;margin: 0;padding-left: 0;padding-bottom: 0;} 
+.custom-content-blocks {padding-bottom: 40px;}
+.marquee span {line-height: 60px;font-size: 60px;}
+}
+@media screen and (max-width: 480px) {
+.hero--x-large {height: 280px;}
+.image-with-logo .hero__inner img {width: 180px;}
+.rich-text p {font-size: 25px;line-height: 35px;}
+.page-width {padding-left: 20px;padding-right: 20px;}
+.marquee span {margin: 0 10px;font-size: 40px;line-height: 40px;}
+.marquee__inner {padding: 40px 0;}
+.productss li .grid-view-item__link {border-left: transparent !important;}
+div#shopify-section-collection h2.grid__item.medium-up--one-third:nth-child(2) {display: none;}
+div#shopify-section-collection h2.grid__item.medium-up--one-third {width: 100%;}
+}

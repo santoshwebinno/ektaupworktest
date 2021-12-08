@@ -1,0 +1,94 @@
+<div class="service-list" data-js-class="ServiceList" data-section-id="{{ section.id }}" data-section-type="service_list" data-service-list--show-descriptions="{{ section.settings.show-description }}" style="background: {{ section.settings.color_bg }};">
+  {% if section.settings.section--title.size > 0 %}
+  <h2 class="service-list--title" data-item="section-heading">
+    {{ section.settings.section--title | escape }}
+  </h2>
+  {% endif %}
+  <div class="service-list--container">
+    {% if section.blocks.size > 0 %}
+    <nav class="menuss">
+      <div class="menu__itemss">
+        <div class="marquee">
+          <div class="marquee__inner" aria-hidden="false">
+            {% for block in section.blocks %}
+            <span>{% if section.settings.show-heart %}             
+              <img src="{{ 'icon_heart_white.svg' | asset_url }}" class="svg-icon" >
+              {% endif %}
+              {% if section.settings.show-tick %}
+              <img src="{{ 'icon_tick_white.svg' | asset_url }}" class="svg-icon" >
+              {% endif %} {{ block.settings.title | escape }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </nav>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Scrolling Text",
+"class": "logo-carosel",
+  "settings": [
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "Background Color"
+	},
+    {
+      "type": "text",
+      "id": "section--title",
+      "label": "Title",
+      "default": "Add title here"
+    },
+    {
+      "type": "checkbox",
+      "id": "show-heart",
+      "label": "show Heart Icon",
+      "default": false
+    },
+{
+      "type": "checkbox",
+      "id": "show-tick",
+      "label": "show Tick Icon",
+      "default": false
+    }
+  ],
+  "blocks": [
+    
+    {
+      "type": "item",
+      "name": "List item",
+      "settings": [
+{
+          "type": "textarea",
+          "id": "descriptions",
+          "label": "Descriptions",
+          "default": "<p>Add service description here</p>"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Add service title here"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "Scrolling Text",
+    "category": "Text",
+    "settings": {
+      "section--title": "Add title here"
+      
+    },
+    "blocks": [
+     
+      {
+        "type": "item"
+      }
+    ]
+  }]
+}
+{% endschema %}
